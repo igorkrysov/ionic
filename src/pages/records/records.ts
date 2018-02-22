@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
-
+import { ModalPage } from '../modal/modal';
+import { AboutPage } from '../about/about';
 
 
 // import { HttpClientModule } from '@angular/common/http';
@@ -51,9 +52,10 @@ export class RecordsPage {
       this.tmp = "alert";
   }
 
-  editRecord(id:any){
-    console.log('edit: ', id);
-    let profileModal = this.modalCtrl.create(FactoryComponent, { userId: 8675309 });
+  editRecord(category:any){
+    console.log('edit: ', category);
+    //this.navCtrl.push(ModalPage);
+    let profileModal = this.modalCtrl.create(ModalPage, { category: category });
     profileModal.present();
   }
 
@@ -65,39 +67,5 @@ export class RecordsPage {
   addRecord(){
     this.records.push({'id': 100, 'text': this.new_record });
   }
-
-}
-
-@Component({
-entryComponents: [
-FactoryComponent
-],
-
-
-  selector: 'FactoryComponent',
-  template: `
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Description
-    </ion-title>
-    <ion-buttons start>
-      <button ion-button (click)="dismiss()">
-        <span ion-text color="primary" showWhen="ios">Cancel</span>
-        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-TEST
-</ion-content>
-`
-})
-export class FactoryComponent {
-
- constructor(params: NavParams) {
-   console.log('Profile');
- }
 
 }

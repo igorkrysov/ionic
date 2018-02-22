@@ -13,20 +13,10 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="{{character.image}}">
-        </ion-avatar>
-        <h2>{{character.name}}</h2>
-        <p>{{character.quote}}</p>
-      </ion-item>
+  <ion-item>
+     <ion-label color="primary">Edit record</ion-label>
+     <!-- <ion-input placeholder="Record" [(ngModel)]="edit_record.text"></ion-input> -->
 
-      <ion-item *ngFor="let item of character['items']">
-        {{item.title}}
-        <ion-note item-end>
-          {{item.note}}
-        </ion-note>
-      </ion-item>
-  </ion-list>
+  </ion-item>
+  <button ion-button (click)="updateRecord()">Add</button>
 </ion-content>

@@ -37,7 +37,7 @@
     <tr *ngFor="let record of records; let i = index">
       <td>{{ record.text }}</td>
       <td>{{ record.updated_at }}</td>
-      <td><a (click)="editRecord(record.id)">Edit</a></td>
+      <td><a (click)="editRecord(record)">Edit</a></td>
       <td><a (click)="removeRecord(i)">Remove</a></td>
       <td>{{ i }}</td>
     </tr>

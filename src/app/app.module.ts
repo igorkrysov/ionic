@@ -8,6 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { RecordsPage } from '../pages/records/records';
+import { ModalPage } from '../pages/modal/modal';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +26,8 @@ import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
     ContactPage,
     HomePage,
     TabsPage,
-    RecordsPage
+    RecordsPage,
+    ModalPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
     ContactPage,
     HomePage,
     TabsPage,
-    RecordsPage
+    RecordsPage,
+    ModalPage
   ],
   providers: [
     StatusBar,

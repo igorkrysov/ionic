@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { RecordsPage } from './records';
-import { FactoryComponent } from './records'
+//import { FactoryComponent } from './records'
 
 
 @NgModule({
@@ -11,10 +11,10 @@ import { FactoryComponent } from './records'
   imports: [
     IonicPageModule.forChild(RecordsPage),
   //  HttpModule,
-  FactoryComponent
+//  FactoryComponent
   ],
   entryComponents: [
-    FactoryComponent
+  //  FactoryComponent
     ]
 })
 export class RecordsPageModule {}
