@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler, MenuController } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -17,7 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 //import { Http } from '@angular/http';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
+//import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -49,7 +49,7 @@ import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RedditDataProvider,
+    //RedditDataProvider,
     // RedditDataProvider
   ]
 })
