@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { RecordsPage } from '../pages/records/records';
 import { ModalPage } from '../pages/modal/modal';
 import { ListPage } from '../pages/list/list';
+import { MapPage } from '../pages/map/map';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ import { DataProvider } from '../providers/data/data';
     TabsPage,
     RecordsPage,
     ModalPage,
-    ListPage
+    ListPage,
+    MapPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { DataProvider } from '../providers/data/data';
     TabsPage,
     RecordsPage,
     ModalPage,
-    ListPage
+    ListPage,
+    MapPage
   ],
   providers: [
     StatusBar,

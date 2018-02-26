@@ -7,6 +7,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
 import { RecordsPage } from '../pages/records/records';
 import { ListPage } from '../pages/list/list';
+import { MapPage } from '../pages/map/map';
 
 
 @Component({
@@ -30,7 +31,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Records', component: RecordsPage },
-      { title: 'List', component: ListPage }
+      { title: 'List', component: ListPage },
+      { title: 'Map', component: MapPage }
     ];
   }
 
