@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { RecordsPage } from '../pages/records/records';
 import { ListPage } from '../pages/list/list';
 import { MapPage } from '../pages/map/map';
+import { NavigatorPage } from '../pages/navigator/navigator';
 
 
 @Component({
@@ -32,7 +33,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Records', component: RecordsPage },
       { title: 'List', component: ListPage },
-      { title: 'Map', component: MapPage }
+      { title: 'Map', component: MapPage },
+      { title: 'Navigator', component: NavigatorPage }
     ];
   }
 

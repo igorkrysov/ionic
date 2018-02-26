@@ -1,6 +1,3 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
-
 // import { HttpClientModule } from '@angular/common/http';
 //import { Http } from '@angular/http';
 // import { HttpModule } from '@angular/http';

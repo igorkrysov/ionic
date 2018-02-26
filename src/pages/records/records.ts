@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ModalController, NavParams } from 'ionic-angular';
 import { ModalPage } from '../modal/modal';
-import { AboutPage } from '../about/about';
 import { DataProvider} from '../../providers/data/data';
 
 // import { HttpClientModule } from '@angular/common/http';

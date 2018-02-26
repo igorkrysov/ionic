@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler, MenuController } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -11,6 +11,7 @@ import { RecordsPage } from '../pages/records/records';
 import { ModalPage } from '../pages/modal/modal';
 import { ListPage } from '../pages/list/list';
 import { MapPage } from '../pages/map/map';
+import { NavigatorPage } from '../pages/navigator/navigator'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,6 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataProvider } from '../providers/data/data';
 //import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
 
+import { Geolocation } from '@ionic-native/geolocation';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -32,7 +35,8 @@ import { DataProvider } from '../providers/data/data';
     RecordsPage,
     ModalPage,
     ListPage,
-    MapPage
+    MapPage,
+    NavigatorPage
   ],
   imports: [
     BrowserModule,
@@ -50,13 +54,15 @@ import { DataProvider } from '../providers/data/data';
     RecordsPage,
     ModalPage,
     ListPage,
-    MapPage
+    MapPage,
+    NavigatorPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
+    Geolocation
     //RedditDataProvider,
     // RedditDataProvider
   ]
