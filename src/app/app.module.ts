@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { RecordsPage } from '../pages/records/records';
 import { ModalPage } from '../pages/modal/modal';
+import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 //import { Http } from '@angular/http';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { DataProvider } from '../providers/data/data';
 //import { RedditDataProvider } from '../providers/reddit-data/reddit-data';
 
 @NgModule({
@@ -27,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     TabsPage,
     RecordsPage,
-    ModalPage
+    ModalPage,
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -43,12 +46,14 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     TabsPage,
     RecordsPage,
-    ModalPage
+    ModalPage,
+    ListPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DataProvider,
     //RedditDataProvider,
     // RedditDataProvider
   ]
